@@ -108,7 +108,7 @@ export const Dashboard = ({ categories }) => {
                 </Tbody>
               </Table>
             </TableContainer>
-            <Button onClick={() => navigate("/admin")}>Back</Button>
+            <Button onClick={() => navigate("/")}>Back</Button>
           </>
         )
       )}

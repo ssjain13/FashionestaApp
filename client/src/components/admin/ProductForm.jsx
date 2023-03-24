@@ -63,12 +63,12 @@ export const ProductForm = () => {
     });
     setIsDisable(true);
     setTimeout(() => {
-      navigate("/admin");
+      navigate("/");
     }, 2000);
   };
 
   const handleCancel = () => {
-    navigate("/admin");
+    navigate("/");
   };
 
   const handleImageUpload = (e) => {
@@ -97,7 +97,7 @@ export const ProductForm = () => {
     });
     setIsDisable(true);
     setTimeout(() => {
-      navigate("/admin");
+      navigate("/");
     }, 2000);
   };
 

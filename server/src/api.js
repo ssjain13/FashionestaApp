@@ -97,8 +97,10 @@ export async function updateApi(data, collectionParam) {
 export async function deleteApi(param, _collection) {
   const docRef = doc(db, _collection, param.id);
   const snapShot = await getDoc(docRef);
+
   if (snapShot.exists()) {
     deleteDoc(docRef);
+    console.log("True");
     return true;
   } else return false;
 }
@@ -150,11 +152,11 @@ export async function uploadFile(file) {
   );
 
   const metadata = {
-    contentType: "image/jpeg",  };
+    contentType: "image/jpeg",
+  };
 
   const snapshot = await uploadBytes(storageRef, file.buffer, metadata);
 
   const downloadUrl = await getDownloadURL(snapshot.ref);
   return downloadUrl;
- 
 }

@@ -54,7 +54,7 @@ export const CategoryForm = () => {
     });
     setIsDisable(true);
     setTimeout(() => {
-      navigate("/admin");
+      navigate("/");
     }, 2000);
   };
   const handleCreate = (e) => {
@@ -67,12 +67,12 @@ export const CategoryForm = () => {
     });
     setIsDisable(true);
     setTimeout(() => {
-      navigate("/admin");
+      navigate("/");
     }, 2000);
   };
 
   const handleCancel = (e) => {
-    navigate("/admin");
+    navigate("/");
   };
   return (
     <Box ml="15px">
